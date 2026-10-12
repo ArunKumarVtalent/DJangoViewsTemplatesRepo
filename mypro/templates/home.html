@@ -1,7 +1,18 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     Home
+{% endblock %}
+
+{% block CSS %}
+   <!-- <style>
+       /* Add your custom CSS styles here */
+       body{
+           background-color: lightblue;
+       }
+   </style> -->
+   <link href="{% static 'css/home.css' %}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}

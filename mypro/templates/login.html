@@ -1,5 +1,15 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Login{% endblock %}
+{% block CSS %}
+   <!-- <style>
+       /* Add your custom CSS styles here */
+       body{
+           background-color: lightgreen;
+       }
+   </style> -->
+   <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+{% endblock %}
 {% block content %}
     <h1>Login</h1>
     <p>Please enter your credentials to log in.</p>
